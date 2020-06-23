@@ -1,0 +1,220 @@
+Building configuration...
+
+Current configuration : 5840 bytes
+!
+! Last configuration change at 15:27:32 PDT Tue Jun 23 2020 by admin
+!
+version 15.2
+service timestamps debug datetime msec localtime
+service timestamps log datetime msec localtime
+no service password-encryption
+service compress-config
+!
+hostname Switch67
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable password cisco
+!
+username admin privilege 15 password 0 cisco
+no aaa new-model
+clock timezone PST -8 0
+clock summer-time PDT recurring
+!
+!
+!
+!
+!
+vtp mode transparent
+udld enable
+
+ip arp inspection vlan 100-101
+!
+!
+!
+ip dhcp snooping vlan 100-101
+no ip dhcp snooping information option
+ip dhcp snooping
+ip domain-name cisco.com
+ip name-server 8.8.8.8
+ip cef
+no ipv6 cef
+!
+!
+errdisable recovery cause udld
+errdisable recovery cause bpduguard
+errdisable recovery cause security-violation
+errdisable recovery cause channel-misconfig
+errdisable recovery cause pagp-flap
+errdisable recovery cause dtp-flap
+errdisable recovery cause link-flap
+errdisable recovery cause sfp-config-mismatch
+errdisable recovery cause gbic-invalid
+errdisable recovery cause l2ptguard
+errdisable recovery cause psecure-violation
+errdisable recovery cause port-mode-failure
+errdisable recovery cause dhcp-rate-limit
+errdisable recovery cause pppoe-ia-rate-limit
+errdisable recovery cause mac-limit
+errdisable recovery cause unicast-flood
+errdisable recovery cause vmps
+errdisable recovery cause storm-control
+errdisable recovery cause inline-power
+errdisable recovery cause arp-inspection
+errdisable recovery cause link-monitor-failure
+errdisable recovery cause oam-remote-failure
+errdisable recovery cause loopback
+errdisable recovery cause psp
+!
+spanning-tree mode rapid-pvst
+spanning-tree portfast edge bpduguard default
+spanning-tree extend system-id
+!
+!
+vlan 10-11,20,30,40,50,100-101,200 
+!
+vlan 500
+ name Access_500
+!
+vlan 501
+ name Access_501
+!
+vlan 502
+ name Access_502
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ negotiation auto
+!
+interface GigabitEthernet1/0
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 101
+ switchport port-security maximum 2
+ switchport port-security violation restrict
+ switchport port-security aging time 2
+ switchport port-security aging type inactivity
+ switchport port-security
+ ip arp inspection limit rate 100
+ negotiation auto
+ spanning-tree portfast edge
+ ip verify source
+ ip dhcp snooping limit rate 100
+!
+interface GigabitEthernet1/1
+ switchport access vlan 200
+ switchport mode access
+ switchport voice vlan 101
+ switchport port-security maximum 2
+ switchport port-security aging time 2
+ switchport port-security aging type inactivity
+ switchport port-security
+ ip arp inspection limit rate 100
+ negotiation auto
+ ip dhcp snooping limit rate 100
+!
+interface GigabitEthernet1/2
+ switchport access vlan 30
+ switchport mode access
+ switchport voice vlan 11
+ switchport port-security maximum 2
+ switchport port-security aging time 2
+ switchport port-security aging type inactivity
+ switchport port-security
+ ip arp inspection limit rate 100
+ negotiation auto
+ ip dhcp snooping limit rate 100
+!
+interface GigabitEthernet1/3
+ negotiation auto
+!
+interface Vlan1
+ ip address 192.168.178.67 255.255.255.0
+!
+ip forward-protocol nd
+!
+no ip http server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+snmp-server community python1 RO
+snmp-server community python2 RW
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ password cisco
+ login local
+ transport input ssh
+!
+ntp update-calendar
+ntp server 87.81.181.2
+ntp server 41.41.181.2
+!
+end
