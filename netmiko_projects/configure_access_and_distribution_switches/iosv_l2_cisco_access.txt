@@ -1,0 +1,14 @@
+ntp server 41.41.181.2 
+ntp update-calendar
+
+clock timezone PST -8
+clock summer-time PDT recurring
+service timestamps debug datetime msec localtime 
+service timestamps log datetime msec localtime
+
+vlan 500
+ name Access_500
+vlan 501
+ name Access_501
+vlan 502
+ name Access_502 
