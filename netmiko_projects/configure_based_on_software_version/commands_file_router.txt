@@ -1,0 +1,5 @@
+ip name-server 88.88.88.88
+ip domain-lookup
+username test password test
+router ospf 1
+network 0.0.0.0 255.255.255.255 area 0
