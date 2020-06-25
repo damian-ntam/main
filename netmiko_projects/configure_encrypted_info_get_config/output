@@ -1,0 +1,57 @@
+
+----- devices --------------------------
+{'192.168.178.64': {'ipaddr': '192.168.178.64',
+                    'name': ' S1',
+                    'type': ' cisco-ios'},
+ '192.168.178.65': {'ipaddr': '192.168.178.65',
+                    'name': ' S2',
+                    'type': ' cisco-ios'},
+ '192.168.178.66': {'ipaddr': '192.168.178.66',
+                    'name': ' S3',
+                    'type': ' cisco-ios'},
+ '192.168.178.67': {'ipaddr': '192.168.178.67',
+                    'name': ' S4',
+                    'type': ' cisco-ios'},
+ '192.168.178.68': {'ipaddr': '192.168.178.68',
+                    'name': ' S5',
+                    'type': ' cisco-ios'}}
+
+... getting credentials ...
+
+[['192.168.178.64', 'admin', 'cisco'],
+ ['192.168.178.65', 'admin', 'cisco'],
+ ['192.168.178.66', 'admin', 'cisco'],
+ ['192.168.178.67', 'admin', 'cisco'],
+ ['192.168.178.68', 'admin', 'cisco']]
+
+----- device_creds ----------------------
+{'192.168.178.64': ['192.168.178.64', 'admin', 'cisco'],
+ '192.168.178.65': ['192.168.178.65', 'admin', 'cisco'],
+ '192.168.178.66': ['192.168.178.66', 'admin', 'cisco'],
+ '192.168.178.67': ['192.168.178.67', 'admin', 'cisco'],
+ '192.168.178.68': ['192.168.178.68', 'admin', 'cisco']}
+
+---- Begin get config sequential ------
+
+Getting config for:  {'ipaddr': '192.168.178.64', 'type': ' cisco-ios', 'name': ' S1'}
+---- Connecting to device 192.168.178.64, username=admin, password=cisco
+---- Getting configuration from device
+---- Writing configuration:  config-192.168.178.64
+Getting config for:  {'ipaddr': '192.168.178.65', 'type': ' cisco-ios', 'name': ' S2'}
+---- Connecting to device 192.168.178.65, username=admin, password=cisco
+---- Getting configuration from device
+---- Writing configuration:  config-192.168.178.65
+Getting config for:  {'ipaddr': '192.168.178.66', 'type': ' cisco-ios', 'name': ' S3'}
+---- Connecting to device 192.168.178.66, username=admin, password=cisco
+---- Getting configuration from device
+---- Writing configuration:  config-192.168.178.66
+Getting config for:  {'ipaddr': '192.168.178.67', 'type': ' cisco-ios', 'name': ' S4'}
+---- Connecting to device 192.168.178.67, username=admin, password=cisco
+---- Getting configuration from device
+---- Writing configuration:  config-192.168.178.67
+Getting config for:  {'ipaddr': '192.168.178.68', 'type': ' cisco-ios', 'name': ' S5'}
+---- Connecting to device 192.168.178.68, username=admin, password=cisco
+---- Getting configuration from device
+---- Writing configuration:  config-192.168.178.68
+
+---- End get config sequential, elapsed time= 49.36002206802368
