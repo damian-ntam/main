@@ -1,0 +1,88 @@
+
+----- devices --------------------------
+{'192.168.178.64': {'ipaddr': '192.168.178.64',
+                    'name': ' S1',
+                    'type': ' cisco-ios'},
+ '192.168.178.65': {'ipaddr': '192.168.178.65',
+                    'name': ' S2',
+                    'type': ' cisco-ios'},
+ '192.168.178.66': {'ipaddr': '192.168.178.66',
+                    'name': ' S3',
+                    'type': ' cisco-ios'},
+ '192.168.178.67': {'ipaddr': '192.168.178.67',
+                    'name': ' S4',
+                    'type': ' cisco-ios'},
+ '192.168.178.68': {'ipaddr': '192.168.178.68',
+                    'name': ' S5',
+                    'type': ' cisco-ios'}}
+
+... getting credentials ...
+
+
+----- device_creds ----------------------
+{'192.168.178.64': ['192.168.178.64', 'admin', 'cisco'],
+ '192.168.178.65': ['192.168.178.65', 'admin', 'cisco'],
+ '192.168.178.66': ['192.168.178.66', 'admin', 'cisco'],
+ '192.168.178.67': ['192.168.178.67', 'admin', 'cisco'],
+ '192.168.178.68': ['192.168.178.68', 'admin', 'cisco']}
+
+Number of threads (5): 
+--- Creating threadpool, launching get config threads
+
+---- Connecting to device 192.168.178.64, username=admin, password=cisco
+---- Connecting to device 192.168.178.65, username=admin, password=cisco
+---- Connecting to device 192.168.178.66, username=admin, password=cisco
+---- Getting configuration from device
+---- Getting configuration from device
+---- Getting configuration from device
+---- Writing configuration:  config-192.168.178.64
+---- Writing configuration:  config-192.168.178.65
+---- Writing configuration:  config-192.168.178.66
+
+----- devices --------------------------
+{'192.168.178.64': {'ipaddr': '192.168.178.64',
+                    'name': ' S1',
+                    'type': ' cisco-ios'},
+ '192.168.178.65': {'ipaddr': '192.168.178.65',
+                    'name': ' S2',
+                    'type': ' cisco-ios'},
+ '192.168.178.66': {'ipaddr': '192.168.178.66',
+                    'name': ' S3',
+                    'type': ' cisco-ios'},
+ '192.168.178.67': {'ipaddr': '192.168.178.67',
+                    'name': ' S4',
+                    'type': ' cisco-ios'},
+ '192.168.178.68': {'ipaddr': '192.168.178.68',
+                    'name': ' S5',
+                    'type': ' cisco-ios'}}
+
+... getting credentials ...
+
+
+----- device_creds ----------------------
+{'192.168.178.64': ['192.168.178.64', 'admin', 'cisco'],
+ '192.168.178.65': ['192.168.178.65', 'admin', 'cisco'],
+ '192.168.178.66': ['192.168.178.66', 'admin', 'cisco'],
+ '192.168.178.67': ['192.168.178.67', 'admin', 'cisco'],
+ '192.168.178.68': ['192.168.178.68', 'admin', 'cisco']}
+
+Number of threads (5): 
+--- Creating threadpool, launching get config threads
+
+---- Connecting to device 192.168.178.64, username=admin, password=cisco
+---- Connecting to device 192.168.178.65, username=admin, password=cisco
+---- Connecting to device 192.168.178.66, username=admin, password=cisco
+---- Connecting to device 192.168.178.67, username=admin, password=cisco
+---- Connecting to device 192.168.178.68, username=admin, password=cisco
+---- Getting configuration from device
+---- Getting configuration from device
+---- Getting configuration from device
+---- Getting configuration from device
+---- Getting configuration from device
+---- Writing configuration:  config-192.168.178.65
+---- Writing configuration:  config-192.168.178.68
+---- Writing configuration:  config-192.168.178.64
+---- Writing configuration:  config-192.168.178.67
+---- Writing configuration:  config-192.168.178.66
+
+---- End get config threadpool, elapsed time= 8.2662353515625

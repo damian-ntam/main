@@ -101,7 +101,7 @@ def config_worker( device_and_creds ):
 # ---- Main: Get Configuration
 #==============================================================================
 
-devices = read_devices( 'devices-file' )
+devices = read_devices( 'devices-file.txt' )
 creds   = read_device_creds( 'encrypted-device-creds', 'cisco' )
 
 num_threads_str = input( '\nNumber of threads (5): ' ) or '5'
