@@ -1,14 +1,14 @@
 from netmiko import ConnectHandler
 
 iosv_l2_s1 = {
-    'device_type': 'f5_bigip',
+    'device_type': 'cisco_ios',
     'ip': '192.168.178.23',
-    'username': 'root',
-    'password': 'f5password',
+    'username': 'cisco',
+    'password': 'admin',
 }
 
 net_connect = ConnectHandler(**iosv_l2_s1)
-output = net_connect.send_command('cat /config/bigip.conf')
+output = net_connect.send_command('show version')
 print(output)
 
 
