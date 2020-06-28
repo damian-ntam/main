@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 5584 bytes
+Current configuration : 5943 bytes
 !
-! Last configuration change at 15:27:46 PDT Tue Jun 23 2020 by admin
+! Last configuration change at 12:21:44 PDT Sun Jun 28 2020 by admin
 !
 version 15.2
 service timestamps debug datetime msec localtime
@@ -19,6 +19,7 @@ boot-end-marker
 enable password cisco
 !
 username admin privilege 15 password 0 cisco
+username test password 0 test
 no aaa new-model
 clock timezone PST -8 0
 clock summer-time PDT recurring
@@ -73,7 +74,18 @@ spanning-tree portfast edge bpduguard default
 spanning-tree extend system-id
 !
 !
-vlan 10-11,20,30,40,50,56,67,100-101,200 
+vlan 10-11,20,30,40,50,56,67 
+!
+vlan 100
+ name Python_VLAN_100
+!
+vlan 101 
+!
+vlan 200
+ name Python_VLAN_200
+!
+vlan 300
+ name Python_VLAN_300
 !
 vlan 500
  name Access_500
@@ -96,6 +108,12 @@ vlan 502
 !
 !
 !
+!
+interface Loopback100
+ ip address 100.100.100.100 255.255.255.255
+!
+interface Loopback200
+ ip address 200.200.200.200 255.255.255.255
 !
 interface GigabitEthernet0/0
  switchport trunk encapsulation dot1q
@@ -152,6 +170,13 @@ interface GigabitEthernet1/3
 !
 interface Vlan1
  ip address 192.168.178.71 255.255.255.0
+!
+!
+router eigrp 100
+ network 0.0.0.0
+!
+router ospf 1
+ network 0.0.0.0 255.255.255.255 area 0
 !
 ip default-gateway 192.168.178.1
 ip forward-protocol nd

@@ -9,5 +9,5 @@ iosv_l2_s1 = {
 }
 
 net_connect = ConnectHandler(**iosv_l2_s1)
-output = net_connect.send_command('show flash:')
+output = net_connect.send_command('show tech-support')
 print(output)
