@@ -1,0 +1,2 @@
+tmsh show running-config
+
