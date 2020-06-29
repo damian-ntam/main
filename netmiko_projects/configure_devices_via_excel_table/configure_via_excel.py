@@ -39,7 +39,7 @@ for index in range(1, sheet.nrows):
 
 
     net_connect.enable()
-    output = net_connect.send_config_set(device['config'])
+    output = net_connect.send_config_from_file(device['config'])
     print("***** show ip configuration of Device *****")
     #output = net_connect.send_command("show ip int b")
     print(output)
