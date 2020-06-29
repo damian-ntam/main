@@ -1,0 +1,57 @@
+***** show ip configuration of Device *****
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router55(config)#username melih-R55 privilege 15 password cisco
+Router55(config)#snmp-server contact Melih TEKE
+Router55(config)#snmp-server community m3lIX rw
+Router55(config)#snmp-server enable traps
+Router55(config)#end
+Router55#
+***** show ip configuration of Device *****
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch64(config)#username melih-switch64 privilege 15 password ciscoi
+Switch64(config)#snmp-server contact Melih TEKE
+Switch64(config)#snmp-server community m3lIX rw
+Switch64(config)#snmp-server enable traps
+Switch64(config)#interface Loop 654
+Switch64(config-if)#ip address 172.16.16.64 255.255.255.255
+Switch64(config-if)#no shut
+Switch64(config-if)#end
+Switch64#
+***** show ip configuration of Device *****
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch65(config)#username melih-switch65 privilege 15 password cisco
+Switch65(config)#snmp-server contact Melih TEKE
+Switch65(config)#snmp-server community m3lIX rw
+Switch65(config)#snmp-server enable traps
+Switch65(config)#interface Loop 654
+Switch65(config-if)#ip address 172.16.16.65 255.255.255.255
+Switch65(config-if)#no shut
+Switch65(config-if)#end
+Switch65#
+***** show ip configuration of Device *****
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch66(config)#username melih-switch66 privilege 15 password cisco
+Switch66(config)#snmp-server contact Melih TEKE
+Switch66(config)#snmp-server community m3lIX rw
+Switch66(config)#snmp-server enable traps
+Switch66(config)#interface Loop 654
+Switch66(config-if)#ip address 172.16.16.66 255.255.255.255
+Switch66(config-if)#no shut
+Switch66(config-if)#end
+Switch66#
+***** show ip configuration of Device *****
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch67(config)#username melih-switch67 privilege 15 password cisco
+Switch67(config)#snmp-server contact Melih TEKE
+Switch67(config)#snmp-server community m3lIX rw
+Switch67(config)#snmp-server enable traps
+Switch67(config)#interface Loop 654
+Switch67(config-if)#ip address 172.16.16.67 255.255.255.255
+Switch67(config-if)#no shut
+Switch67(config-if)#end
+Switch67#
