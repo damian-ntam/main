@@ -1,8 +1,8 @@
 from getpass import getpass
 from netmiko import ConnectHandler
-
-username = input('Enter your SSH username: ')
-password = getpass()
+#Couldnt not make this worked by using connecthandler !!!!!!!!
+#username = input('Enter your SSH username: ')
+#password = getpass()
 
 with open('commands_file.txt') as f:
     commands_list = f.read().splitlines()
@@ -15,10 +15,10 @@ for devices in devices_list:
     ip_address_of_device = devices
 
     f5_device = {
-        'device_type': 'f5_tmos',
+        'device_type': 'f5_ltm',
         'ip': ip_address_of_device, 
-        'username': username,
-        'password': password
+        'username': 'mteke',
+        'password': 'XXXXXXXXXX'
     }
 
     net_connect = ConnectHandler(**f5_device)

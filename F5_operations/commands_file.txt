@@ -1,3 +1,2 @@
-tmsh
-cat /config/bigip.conf
+tmsh show running-config
 
