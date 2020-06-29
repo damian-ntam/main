@@ -1,0 +1,3 @@
+tmsh
+cat /config/bigip.conf
+
