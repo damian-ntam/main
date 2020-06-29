@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+__author__      = "Melih TEKE"
 from netmiko import ConnectHandler
 from netmiko.ssh_exception import AuthenticationException, NetMikoTimeoutException
 import xlrd
