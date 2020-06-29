@@ -1,1 +1,1 @@
-username melih-switch67 priviledge 15 password cisco
+username melih-switch67 privilege 15 password cisco
