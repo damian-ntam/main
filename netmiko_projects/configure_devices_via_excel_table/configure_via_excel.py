@@ -6,15 +6,15 @@ from pprint import pprint
 workbook = xlrd.open_workbook(r"sample_device_table.xlsx")
 sheet = workbook.sheet_by_index(0)
 
-with open('R55_config.txt') as f:
+with open('R55_config') as f:
     R55_config = f.read().splitlines()
-with open('Switch64_config.txt') as f:
+with open('Switch64_config') as f:
     Switch64_config = f.read().splitlines()
-with open('Switch65_config.txt') as f:
+with open('Switch65_config') as f:
     Switch65_config = f.read().splitlines()
-with open('Switch66_config.txt') as f:
+with open('Switch66_config') as f:
     Switch66_config = f.read().splitlines()
-with open('Switch67_config.txt') as f:
+with open('Switch67_config') as f:
     Switch67_config = f.read().splitlines()
 
 for index in range(1, sheet.nrows):
@@ -32,15 +32,15 @@ for index in range(1, sheet.nrows):
     'username': username,
     'password': password,
     'secret': enable_password,
-    'config': 'Switch66_config'
     }
 
     net_connect = ConnectHandler(**device)
 
 
     net_connect.enable()
-    output = net_connect.send_config_from_file(device['config'])
+    #output = net_connect.send_config_from_file(device['config'])
+    output = net_connect.send_config_from_file(config_file)
     print("***** show ip configuration of Device *****")
-    #output = net_connect.send_command("show ip int b")
+    #output = net_connect.send_command("show ip int b")     #.send_command is used for to send specific command
     print(output)
     net_connect.disconnect()

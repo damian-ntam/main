@@ -1,0 +1,7 @@
+username melih-switch66 privilege 15 password cisco
+snmp-server contact Melih TEKE
+snmp-server community m3lIX rw
+snmp-server enable traps
+interface Loop 654
+ip address 172.16.16.66 255.255.255.255
+no shut

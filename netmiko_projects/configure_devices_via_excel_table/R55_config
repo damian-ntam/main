@@ -1,0 +1,4 @@
+username melih-R55 privilege 15 password cisco
+snmp-server contact Melih TEKE
+snmp-server community m3lIX rw
+snmp-server enable traps
