@@ -7,7 +7,7 @@ from jinja2 import Template
 
 #yaml file is being opened in read-only mode
 with open("network_dc.yml", "r") as yaml_file:
-  yaml_data = yaml.load(yaml_file)
+  yaml_data = yaml.load(yaml_file)    #yaml file data is converted to python dict
 
 
 #Creating device templates -  Router template
