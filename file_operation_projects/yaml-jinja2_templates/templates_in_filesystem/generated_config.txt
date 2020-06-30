@@ -1,0 +1,129 @@
+
+hostname R1
+int gig0/0
+no shutdown
+ip add 10.10.88.110 255.255.255.0
+lldp run
+ip domain-name EnterpriseAutomation.net
+ip ssh version 2
+ip scp server enable
+crypto key generate rsa general-keys modulus 1024
+snmp-server community public RW
+snmp-server trap link ietf
+snmp-server enable traps snmp linkdown linkup
+snmp-server enable traps syslog
+snmp-server manager
+logging history debugging
+logging snmp-trap emergencies
+logging snmp-trap alerts
+logging snmp-trap critical
+logging snmp-trap errors
+logging snmp-trap warnings
+logging snmp-trap notifications
+logging snmp-trap informational
+logging snmp-trap debugging
+============================================================
+hostname SW1
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int gig0/0
+no switchport
+no shut
+ip address 10.10.88.111 255.255.255.0
+snmp-server community public RW
+snmp-server trap link ietf
+snmp-server enable traps snmp linkdown linkup
+snmp-server enable traps syslog
+snmp-server manager
+logging history debugging
+logging snmp-trap emergencies
+logging snmp-trap alerts
+logging snmp-trap critical
+logging snmp-trap errors
+logging snmp-trap warnings
+logging snmp-trap notifications
+logging snmp-trap informational
+logging snmp-trap debugging
+============================================================
+hostname SW2
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int gig0/0
+no switchport
+no shut
+ip address 10.10.88.112 255.255.255.0
+snmp-server community public RW
+snmp-server trap link ietf
+snmp-server enable traps snmp linkdown linkup
+snmp-server enable traps syslog
+snmp-server manager
+logging history debugging
+logging snmp-trap emergencies
+logging snmp-trap alerts
+logging snmp-trap critical
+logging snmp-trap errors
+logging snmp-trap warnings
+logging snmp-trap notifications
+logging snmp-trap informational
+logging snmp-trap debugging
+============================================================
+hostname SW3
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int gig0/0
+no switchport
+no shut
+ip address 10.10.88.113 255.255.255.0
+snmp-server community public RW
+snmp-server trap link ietf
+snmp-server enable traps snmp linkdown linkup
+snmp-server enable traps syslog
+snmp-server manager
+logging history debugging
+logging snmp-trap emergencies
+logging snmp-trap alerts
+logging snmp-trap critical
+logging snmp-trap errors
+logging snmp-trap warnings
+logging snmp-trap notifications
+logging snmp-trap informational
+logging snmp-trap debugging
+============================================================
+hostname SW4
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int gig0/0
+no switchport
+no shut
+ip address 10.10.88.114 255.255.255.0
+snmp-server community public RW
+snmp-server trap link ietf
+snmp-server enable traps snmp linkdown linkup
+snmp-server enable traps syslog
+snmp-server manager
+logging history debugging
+logging snmp-trap emergencies
+logging snmp-trap alerts
+logging snmp-trap critical
+logging snmp-trap errors
+logging snmp-trap warnings
+logging snmp-trap notifications
+logging snmp-trap informational
+logging snmp-trap debugging
+============================================================
