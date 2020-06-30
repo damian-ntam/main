@@ -1,0 +1,176 @@
+
+Adding device config for GW
+        interface gig0/0
+            no switchport
+            no shutdown
+            mtu 1520
+            duplex auto
+            speed auto
+        interface gig0/1
+            no switchport
+            no shutdown
+            mtu 1520
+            duplex auto
+            speed auto
+        interface gig0/2
+            no switchport
+            no shutdown
+            mtu 1520
+            duplex auto
+            speed auto
+
+============================================================
+Adding device config for switch1
+        interface gig0/0- gig1/1
+            no switchport
+            no shutdown
+            mtu 1520
+            duplex auto
+            speed auto
+
+        interface gig0/1
+        description "TO_DSW2_1"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+        interface gig0/2
+        description "TO_DSW2_2"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+        interface gig0/3
+        description "TO_ASW3"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+        interface gig1/0
+        description "TO_ASW4"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+
+============================================================
+Adding device config for switch2
+        interface gig0/0
+            no switchport
+            no shutdown
+            mtu 1520
+            duplex auto
+            speed auto
+        interface gig1/1
+            no switchport
+            no shutdown
+            mtu 1520
+            duplex auto
+            speed auto
+
+        interface gig0/1
+        description "TO_DSW1_1"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+        interface gig0/2
+        description "TO_DSW1_2"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+        interface gig0/3
+        description "TO_ASW3"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+        interface gig1/0
+        description "TO_ASW4"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+
+============================================================
+Adding device config for switch3
+        interface gig0/0
+            no switchport
+            no shutdown
+            mtu 1520
+            duplex auto
+            speed auto
+
+        interface gig0/1
+        description "TO_DSW1"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+        interface gig0/2
+        description "TO_DSW2"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+        interface gig1/0
+        description "TO_Client1"
+        no shutdown
+        duplex full
+                    switchport mode access
+                    switchport access vlan 10
+        interface gig1/1
+        description "TO_Client2"
+        no shutdown
+        duplex full
+                    switchport mode access
+                    switchport access vlan 20
+
+============================================================
+Adding device config for switch4
+        interface gig0/0
+            no switchport
+            no shutdown
+            mtu 1520
+            duplex auto
+            speed auto
+
+        interface gig0/1
+        description "TO_DSW2"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+        interface gig0/2
+        description "TO_DSW1"
+        no shutdown
+        duplex full
+                    switchport trunk encapsulation dot1q
+                    switchport mode trunk
+                    switchport trunk allowed vlan 1,10,20,200
+        interface gig1/0
+        description "TO_Client1"
+        no shutdown
+        duplex full
+                    switchport mode access
+                    switchport access vlan 10
+        interface gig1/1
+        description "TO_Client2"
+        no shutdown
+        duplex full
+                    switchport mode access
+                    switchport access vlan 20
+
+============================================================
