@@ -1,0 +1,356 @@
+
+
+
+
+
+switch10Configuration is being created
+hostname switch10
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/8
+no switchportno shut
+ip address 10.10.10.10 255.255.255.0------------------------------------------
+
+
+
+
+switch1Configuration is being created
+hostname switch1
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/0
+no switchport
+no shut
+ip address 1.1.1.1 255.255.255.0
+------------------------------------------
+
+
+
+
+switch2Configuration is being created
+hostname switch2
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/1
+no switchport
+no shut
+ip address 2.2.2.2 255.255.255.0
+------------------------------------------
+
+
+
+
+switch3Configuration is being created
+hostname switch3
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/2
+no switchport
+no shut
+ip address 3.3.3.3 255.255.255.0
+------------------------------------------
+
+
+
+
+switch4Configuration is being created
+hostname switch4
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/3
+no switchport
+no shut
+ip address 4.4.4.4 255.255.255.0
+------------------------------------------
+
+
+
+
+switch5Configuration is being created
+hostname switch5
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi1/3
+no switchport
+no shut
+ip address 5.5.5.5 255.255.255.0
+------------------------------------------
+
+
+
+
+switch6Configuration is being created
+hostname switch6
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi1/4
+no switchport
+no shut
+ip address 6.6.6.6 255.255.255.0
+------------------------------------------
+
+
+
+
+switch7Configuration is being created
+hostname switch7
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi1/3
+no switchport
+no shut
+ip address 7.7.7.7 255.255.255.0
+------------------------------------------
+
+
+
+
+switch8Configuration is being created
+hostname switch8
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/5
+no switchport
+no shut
+ip address 8.8.8.8 255.255.255.0
+------------------------------------------
+
+
+
+
+switch9Configuration is being created
+hostname switch9
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/4
+no switchport
+no shut
+ip address 9.9.9.9 255.255.255.0
+------------------------------------------
+
+
+
+
+switch10Configuration is being created
+hostname switch10
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/8
+no switchport
+no shut
+ip address 10.10.10.10 255.255.255.0
+------------------------------------------
+
+
+
+
+switch1Configuration is being created
+hostname switch1
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/0
+no switchport
+no shut
+ip address 1.1.1.1 255.255.255.0
+------------------------------------------
+
+
+
+
+switch2Configuration is being created
+hostname switch2
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/1
+no switchport
+no shut
+ip address 2.2.2.2 255.255.255.0
+------------------------------------------
+
+
+
+
+switch3Configuration is being created
+hostname switch3
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/2
+no switchport
+no shut
+ip address 3.3.3.3 255.255.255.0
+------------------------------------------
+
+
+
+
+switch4Configuration is being created
+hostname switch4
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/3
+no switchport
+no shut
+ip address 4.4.4.4 255.255.255.0
+------------------------------------------
+
+
+
+
+switch5Configuration is being created
+hostname switch5
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi1/3
+no switchport
+no shut
+ip address 5.5.5.5 255.255.255.0
+------------------------------------------
+
+
+
+
+switch6Configuration is being created
+hostname switch6
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi1/4
+no switchport
+no shut
+ip address 6.6.6.6 255.255.255.0
+------------------------------------------
+
+
+
+
+switch7Configuration is being created
+hostname switch7
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi1/3
+no switchport
+no shut
+ip address 7.7.7.7 255.255.255.0
+------------------------------------------
+
+
+
+
+switch8Configuration is being created
+hostname switch8
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/5
+no switchport
+no shut
+ip address 8.8.8.8 255.255.255.0
+------------------------------------------
+
+
+
+
+switch9Configuration is being created
+hostname switch9
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/4
+no switchport
+no shut
+ip address 9.9.9.9 255.255.255.0
+------------------------------------------
+
+
+
+
+switch10Configuration is being created
+hostname switch10
+aaa new-model
+aaa session-id unique
+aaa authentication login default local
+aaa authorization exec default local none
+vtp mode transparent
+vlan 10,20,30,40,50,60,70,80,90,100,200
+int Gi0/8
+no switchport
+no shut
+ip address 10.10.10.10 255.255.255.0
+------------------------------------------
