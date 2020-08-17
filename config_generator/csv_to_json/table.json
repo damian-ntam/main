@@ -1,0 +1,42 @@
+{
+    "R55": {
+        "\u00ef\u00bb\u00bfhostname": "R55",
+        "ip": "192.168.178.55",
+        "username": "admin",
+        "password": "cisco",
+        "secret": "cisco",
+        "vendor": "cisco_ios"
+    },
+    "Switch64": {
+        "\u00ef\u00bb\u00bfhostname": "Switch64",
+        "ip": "192.168.178.64",
+        "username": "admin",
+        "password": "cisco",
+        "secret": "cisco",
+        "vendor": "cisco_ios"
+    },
+    "Switch65": {
+        "\u00ef\u00bb\u00bfhostname": "Switch65",
+        "ip": "192.168.178.65",
+        "username": "admin",
+        "password": "cisco",
+        "secret": "cisco",
+        "vendor": "cisco_ios"
+    },
+    "Switch66": {
+        "\u00ef\u00bb\u00bfhostname": "Switch66",
+        "ip": "192.168.178.66",
+        "username": "admin",
+        "password": "cisco",
+        "secret": "cisco",
+        "vendor": "cisco_ios"
+    },
+    "Switch67": {
+        "\u00ef\u00bb\u00bfhostname": "Switch67",
+        "ip": "192.168.178.67",
+        "username": "admin",
+        "password": "cisco",
+        "secret": "cisco",
+        "vendor": "cisco_ios"
+    }
+}

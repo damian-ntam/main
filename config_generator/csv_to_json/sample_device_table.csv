@@ -1,0 +1,6 @@
+﻿hostname,ip,username,password,secret,vendor
+R55,192.168.178.55,admin,cisco,cisco,cisco_ios
+Switch64,192.168.178.64,admin,cisco,cisco,cisco_ios
+Switch65,192.168.178.65,admin,cisco,cisco,cisco_ios
+Switch66,192.168.178.66,admin,cisco,cisco,cisco_ios
+Switch67,192.168.178.67,admin,cisco,cisco,cisco_ios
